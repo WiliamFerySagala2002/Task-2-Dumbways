@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/formStyle.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <header>
+        <div class="logo">
+          <h3>DW</h3>
+          <span>DUMBWAYS.ID</span>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">My Project</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="button">
+        <a href="contact.html">Contact me</a>
+      </div>
+    </nav>
+    <main>
+      <header>
+        <h1 style="text-align: center; margin: 20px 0">Get In Touch</h1>
+      </header>
+      <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="subject">Home:</label>
+        <select id="subject" name="subject" required>
+          <option value="">Pilih subjek pesan</option>
+          <option value="jabodetabek">Jabodetabek</option>
+          <option value="luar-jabodetabek">Luar Jabodetabek</option>
+          <option value="luar-negeri">Luar Negeri</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">submit</button>
+      </form>
+    </main>
+  </body>
+</html>
